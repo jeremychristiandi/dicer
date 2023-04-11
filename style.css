@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 65%;
+}
+
+body {
+  background-image: linear-gradient(to left top, #f72585 20%, #3a0ca3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  margin: 10% 8%;
+}
+
+.player {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem;
+  transition: ease-in-out 0.6s;
+  font-size: 2rem;
+}
+
+.player-label {
+  position: relative;
+  letter-spacing: 2px;
+  margin-bottom: auto;
+}
+
+/* Set active player */
+.player-active {
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+.winner {
+  color: azure;
+  background-color: rgba(0, 3, 76, 0.7);
+}
+
+.score {
+  font-size: 6rem;
+  margin-bottom: auto;
+}
+
+.val {
+  background-color: rgba(0, 62, 231, 0.7);
+  color: azure;
+  border-radius: 10px;
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+  transition: ease-in-out 0.6s;
+  font-size: 2rem;
+}
+
+.val-label {
+  margin-bottom: 1rem;
+  font: 2rem;
+}
+
+.val-score {
+  font-size: 3rem;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8rem;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.25);
+  top: 20rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40rem;
+  background: none;
+  color: #2d2b2a;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.btn:nth-of-type(1) {
+  top: 10rem;
+}
+.btn:nth-of-type(2) {
+  top: 37rem;
+}
+.btn:nth-of-type(3) {
+  top: 45rem;
+}
+
+.btn:hover {
+  transform: translate(-50%, 4px);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
